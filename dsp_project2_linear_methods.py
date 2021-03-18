@@ -15,16 +15,14 @@ from pyspark.ml.feature import VectorAssembler, StandardScaler, MinMaxScaler
 
 spark = SparkSession.builder.appName('deneme1').getOrCreate()
 
-input_xtrain_file = sys.argv[1] #"/home/kadir/Documents/Spyder/DSP_Spring21/project2/X_small_train.csv" # 
-input_xtest_file = sys.argv[2] #"/home/kadir/Documents/Spyder/DSP_Spring21/project2/X_small_test.csv" #
+input_xtrain_file = sys.argv[1] 
+input_xtest_file = sys.argv[2] 
 input_linear_method = sys.argv[3] # 'linearRegression'
-output_file = sys.argv[4] # "/home/kadir/Documents/Spyder/DSP_Spring21/project2/output"
+output_file = sys.argv[4] 
 
 df_training = spark.read.option("header", "true").csv(input_xtrain_file)
 df_test = spark.read.option("header", "true").csv(input_xtest_file)
 
-# df_training.show(10, truncate = 3)
-# df_training.select([df_training.columns[i] for i in range(9,176)])
 
 # select features and convert to numeric
 def gather_features(X_dataframe, isTestSet = False):
@@ -96,7 +94,4 @@ def linear_classifier_run(df_training, df_test, whichModel, isSmallSet = False):
 # run selected classifier
 linear_classifier_run(df_training, df_test, whichModel = input_linear_method)
 
-# training.show(10, truncate=3)
-# training.dtypes
 
-# training.withColumn("show", joindf["show"].cast(DoubleType()))
