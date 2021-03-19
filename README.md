@@ -34,6 +34,10 @@ Keras models were also tested without using Spark because of complications in se
 - InceptionV3
 
 InceptionV3 was eventually chosen to run on the actual dataset after giving best performance on the small dataset.
+
+To run the code, use the command
+
+`python model_without_spark.py`
 ## Contributions
 Please see [CONTRIBUTORS](https://github.com/dsp-uga/kass-p2/blob/main/CONTRIBUTORS.md) file for more details.
 ## Authors 
