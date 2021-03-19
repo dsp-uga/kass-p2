@@ -1,4 +1,4 @@
-# kass-p2
+# kass-p2: Ethical Facial Recognition
 
 ## Requirements
 - Apache Spark
