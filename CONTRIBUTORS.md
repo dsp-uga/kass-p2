@@ -3,7 +3,8 @@
 - Divya Yadava
   - Tasks
 - Kadir Bice
-  - Tasks
+  - Linear methods application with different classifiers
+  - Pandas UDF implementation for Keras-Pyspark integration
 - Yogesh Chaudhari
   - Setup of Dataproc
   - Preprocessing of images and generate own dataset
