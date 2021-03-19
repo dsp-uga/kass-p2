@@ -8,23 +8,23 @@
 - Implemented using SparkMLlib with modules: pyspark.ml and pyspark.sql
 
 - Alternative classifiers included (argument name): 
----Logistic Regression ('logisticRegression')
----One-vs-All ('onevsall')
----Decision Tree ('decisionTree')
----Random Forest ('randomForest')
----Gradient-Boosted Trees ('gbt')
----Naive Bayes ('nb')
+  - Logistic Regression ('logisticRegression')
+  - One-vs-All ('onevsall')
+  - Decision Tree ('decisionTree')
+  - Random Forest ('randomForest')
+  - Gradient-Boosted Trees ('gbt')
+  - Naive Bayes ('nb')
 
 - Input arguments: <x_train_file> <x_test_file> <classifier_selection> <output_directory>
----x_train_file: in csv format, has sex information in last column
----x_test_file: in csv format, does not have sex information in last column
----output_directory: should not be an existing directory
+  - x_train_file: in csv format, has sex information in last column
+  - x_test_file: in csv format, does not have sex information in last column
+  - output_directory: should not be an existing directory
 
 ## Neural Network Approaches
 ### Keras Models with Spark
 - Notes:
--- Started with Databricks sparkdl but needed to switch to pandas UDF due to runtime updates
--- Code worked locally but we were unable to run on the cluster due to tensorflow/spark setup issues (potential solution: TonY framework)
+  - Started with Databricks sparkdl but needed to switch to pandas UDF due to runtime updates
+  - Code worked locally but we were unable to run on the cluster due to tensorflow/spark setup issues (potential solution: TonY framework)
 ### Keras Models without Spark
 ## Contributions
 Please see [CONTRIBUTORS](https://github.com/dsp-uga/kass-p2/blob/main/CONTRIBUTORS.md) file for more details.
