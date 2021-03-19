@@ -26,6 +26,14 @@
   - Started with Databricks sparkdl but needed to switch to pandas UDF due to runtime updates
   - Code worked locally but we were unable to run on the cluster due to tensorflow/spark setup issues (potential solution: TonY framework)
 ### Keras Models without Spark
+Keras models were also tested without using Spark because of complications in setting up the cluster. The models tested were
+- VGG16
+- Resnet50
+- EfficientNet B0
+- EfficientNet B4
+- InceptionV3
+
+InceptionV3 was eventually chosen to run on the actual dataset after giving best performance on the small dataset.
 ## Contributions
 Please see [CONTRIBUTORS](https://github.com/dsp-uga/kass-p2/blob/main/CONTRIBUTORS.md) file for more details.
 ## Authors 
