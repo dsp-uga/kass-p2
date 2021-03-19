@@ -22,6 +22,9 @@
 
 ## Neural Network Approaches
 ### Keras Models with Spark
+- Notes:
+-- Started with Databricks sparkdl but needed to switch to pandas UDF due to runtime updates
+-- Code worked locally but we were unable to run on the cluster due to tensorflow/spark setup issues (potential solution: TonY framework)
 ### Keras Models without Spark
 ## Contributions
 Please see [CONTRIBUTORS](https://github.com/dsp-uga/kass-p2/blob/main/CONTRIBUTORS.md) file for more details.
