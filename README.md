@@ -1,5 +1,9 @@
 # kass-p2
 
+## Requirements
+- Apache Spark
+- Tensorflow, Keras
+
 ## Linear Methods:
 - Implemented using SparkMLlib with modules: pyspark.ml and pyspark.sql
 
@@ -16,6 +20,9 @@
 ---x_test_file: in csv format, does not have sex information in last column
 ---output_directory: should not be an existing directory
 
+## Neural Network Approaches
+### Keras Models with Spark
+### Keras Models without Spark
 ## Contributions
 Please see [CONTRIBUTORS](https://github.com/dsp-uga/kass-p2/blob/main/CONTRIBUTORS.md) file for more details.
 ## Authors 
